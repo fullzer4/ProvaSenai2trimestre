@@ -40,7 +40,9 @@ header{
 }
 
 header h1{
-    font-style: Pacifico;
+    font-family: 'Pacifico', cursive;
+    color: white;
+    font-size: 48px;
 }
 
 .container{
@@ -150,6 +152,11 @@ footer{
     align-items: center;
     justify-content: center;
     gap: 5px;
+}
+
+.dados p{
+    font-family: 'Comfortaa', cursive;
+    font-weight: 500;
 }
 
 .table{
