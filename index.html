@@ -1,41 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Prova</title>
 </head>
 <body>
-    <header>
-        <h1>Massa Corporal</h1>
-    </header>
-    <div class="container">
-        <div class="calculadora">
-            <div>
-                <input type="number">
-                <input type="number">
+    <div id="pagina">
+        <header>
+            <h1>Massa Corporal</h1>
+        </header>
+        <div class="container">
+            <div class="calculadora">
+                <div class="inputs">
+                    <div class="altura">
+                        <label>Altura (ex: 1.70)</label>
+                        <input type="number" id="altura" placeholder="Quilos">
+                    </div>
+                    <div class="peso">
+                        <label>Peso (ex: 65.2)</label>
+                        <input type="number" id="peso" placeholder="Metros">
+                    </div>
+                </div>
+                <div class="botoes">
+                    <button onclick=limpar()>Limpar</button>
+                    <button onclick=calcular()>calcular</button>
+                </div>
+                <div class="resultado">
+                    <input type="number" readonly id="result">
+                </div>
             </div>
-            <div>
-                <button>foi</button>
-                <button>foi</button>
-            </div>
-            <div>
-                <input type="number">
-            </div>
-        </div>
 
-        <div class="tabela">
-            
+            <div class="tabela">
+                
+            </div>
         </div>
+        <footer>
+            <div>
+                <p>Gabriel Pelizzaro</p>
+                <p>2B</p>
+                <p>Escola S (sesi/senai)</p>
+            </div>
+        </footer>
     </div>
-    <footer>
-        <div>
-            <p>Gabriel Pelizzaro</p>
-            <p>2B</p>
-            <p>Escola S (sesi/senai)</p>
-        </div>
-    </footer>
     <script src="./js/script.js"></script>
 </body>
 </html>
