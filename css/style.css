@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500&family=Pacifico&display=swap');
 
 *{
   margin: 0;
@@ -12,7 +12,6 @@
 
 html, body{
   height: 100%;
-  background-color: rgb(241, 241, 241);
 }
 
 #pagina{
@@ -23,16 +22,12 @@ html, body{
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 100%;
+  gap: 50px;
 }
 
 button{
  cursor: pointer;
  border: none; 
-}
-
-input{
-  border: none;
 }
 
 header{
@@ -41,7 +36,11 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(127, 255, 212, 0.397);
+    background-color: rgb(127, 178, 255);
+}
+
+header h1{
+    font-style: Pacifico;
 }
 
 .container{
@@ -50,34 +49,120 @@ header{
     justify-content: center;
 }
 
+.calculadora{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
 .inputs{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    gap: 15px;
 }
 
 .altura{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     justify-content: center;
+    gap: 10px;
 }
+
+.altura label{
+    color: rgb(127, 178, 255);
+}
+
+#altura{
+    border: 2px solid rgb(127, 178, 255);
+    border-radius: 15px;
+    height: 3rem;
+    width: 15rem;
+    text-align: center;
+    font-size: 25px;
+    background-color: rgba(37, 36, 36, 0.014);
+}
+
 .peso{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     justify-content: center;
+    gap: 10px;
 }
+
+.peso label{
+    color: rgb(127, 178, 255);
+}
+
+#peso{
+    border: 2px solid rgb(127, 178, 255);
+    border-radius: 15px;
+    height: 3rem;
+    width: 15rem;
+    text-align: center;
+    font-size: 25px;
+    background-color: rgba(37, 36, 36, 0.014);
+}
+
 .botoes{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    gap: 15px;
 }
+
+.botoes button{
+    border-radius: 15px;
+    height: 3rem;
+    width: 15rem;
+}
+
 .resultado{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    width: 100%;
+}
+
+.resultado input{
+    border-radius: 15px;
+    height: 3rem;
+    width: calc(30rem + 15px);
+    border: 2px solid rgb(127, 178, 255);
+    text-align: center;
+    font-size: 25px;
+    background-color: rgba(37, 36, 36, 0.123);
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.dados{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.table{
+    display: flex;
+    align-items: center;
+    width: calc(30rem + 15px);
+}
+
+table{
+    border-collapse: collapse;
+    width: calc(30rem + 15px);
+}
+
+.titulos{
+    background-color: rgb(127, 178, 255);
 }

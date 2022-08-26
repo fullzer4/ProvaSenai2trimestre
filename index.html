@@ -10,7 +10,7 @@
 <body>
     <div id="pagina">
         <header>
-            <h1>Massa Corporal</h1>
+            <h1>IMC Calculator</h1>
         </header>
         <div class="container">
             <div class="calculadora">
@@ -32,15 +32,47 @@
                     <input type="number" readonly id="result">
                 </div>
             </div>
-
-            <div class="tabela">
-                
-            </div>
+        </div>
+        <div class="tabela">
+            <table>
+                <tbody>
+                    <tr class="titulos">
+                        <td>IMC</td>
+                        <td>CLASSIFICAÇÂO</td>
+                        <td>OBESIDADE</td>
+                    </tr>
+                    <tr>
+                        <td>MENOR QUE 18.5</td>
+                        <td>MAGREZA</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>ENTRE 18.5 e 24.9</td>
+                        <td>NORMAL</td>
+                        <td>0</td>
+                    </tr>  
+                    <tr>
+                        <td>ENTRE 25 e 29.9</td>
+                        <td>SOBREPESO</td>
+                        <td>I</td>
+                    </tr>  
+                    <tr>
+                        <td>ENTRE 30 e 39.9</td>
+                        <td>OBESIDADE</td>
+                        <td>II</td>
+                    </tr>  
+                    <tr>
+                        <td>MAIOR QUE 40.0</td>
+                        <td>OBESIDADE GRAVE</td>
+                        <td>III</td>
+                    </tr>     
+                </tbody>
+            </table>
         </div>
         <footer>
-            <div>
+            <div class="dados">
                 <p>Gabriel Pelizzaro</p>
-                <p>2B</p>
+                <p>turma: 2B</p>
                 <p>Escola S (sesi/senai)</p>
             </div>
         </footer>
