@@ -161,6 +161,10 @@ footer{
 table{
     border-collapse: collapse;
     width: calc(30rem + 15px);
+    border: 2px solid rgb(127, 178, 255);
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
 }
 
 .titulos{
